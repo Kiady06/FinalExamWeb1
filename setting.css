@@ -122,6 +122,59 @@ header {
     color: white;
 }
 
+main {
+    display: flex;
+    flex-direction: row;
+    gap: 3ch;
+    justify-content: space-between;
+    margin-block: 3ch;
+    margin-inline: 5ch;
+    border: 1px solid red;
+    width: 93.5%;
+}
+
+.section-left {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid yellow;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.section-right {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid yellow;
+    border-radius: 10px;
+    width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .section-switch input {
     display: none;
