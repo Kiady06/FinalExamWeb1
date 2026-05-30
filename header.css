@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Game Of Squids';
+    src: url('Polices/Game Of Squids.otf') format('opentype');
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -41,9 +46,10 @@ header {
 
 #logo-header h1 {
     font-size: 45px;
-    font-family: Verdana, Geneva, Tahoma;
-    color: rgba(0, 0, 0, 0.5);
-    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+    font-family: 'Game Of Squids', monospace;
+    letter-spacing: 5px;    
+    color: white;
+    text-shadow: 1px 3px 4px rgba(170, 170, 170, 0.7);
 }
 
 #logo-header h1 #special1 {
@@ -57,7 +63,7 @@ header {
 #navigation-header {
     display: flex;
     flex-direction: row;
-    gap: 5ch;
+    gap: 3.5ch;
     border-radius: 15px;
     padding-inline: 1ch;
     padding-block: 1ch;
@@ -69,16 +75,27 @@ header {
 .link-navigation-header {
     display: flex;
     flex-direction: row;
-    gap: 2ch;
+    gap: 1.7ch;
+    text-align: center;
     padding-inline: 1.5ch;
     justify-content: center;
     align-items: center;
+    color: rgb(150, 150, 150);
+    transition: 0.3s ease;
 }
 
 .link-navigation-header a {
     text-decoration: none;
     color: rgb(150, 150, 150);
     transition: 0.3s ease;
+}
+
+.link-navigation-header i {
+    font-size: 18px;
+}
+
+.link-navigation-header:hover {
+    color: rgb(251, 255, 0);
 }
 
 .link-navigation-header a:hover {
@@ -93,6 +110,11 @@ header {
 }
 
 #link-special a {
+    color: white;
+}
+
+#link-special i {
+    margin-top: 3px;
     color: white;
 }
 
