@@ -390,7 +390,7 @@ main {
     color: white;
     background-color: rgba(58, 58, 58, 0.2);
     cursor: pointer;
-    transition: 0.3s ease-in-out;
+    transition: 0.1s ease-in-out;
 }
 
 .section-button button:hover {
