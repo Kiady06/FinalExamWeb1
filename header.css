@@ -144,6 +144,12 @@ header {
     color: white;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .section-option {
     display: flex;
     flex-direction: row;
@@ -151,7 +157,6 @@ header {
     padding-inline: 2ch;
     padding-block: 2ch;
     background-color: rgba(80, 80, 80, 0.1);
-    /* border: 1px solid red; */
     border-radius: 10px;
     margin-block: 2.5ch;
     margin-inline: 5ch;
@@ -239,4 +244,53 @@ header {
 .section-option-right p {
     color: rgb(251, 255, 0);
     font-weight: 500;
+}
+
+.section-dactylo {
+    border: 1px solid yellow;
+    padding-block: 15ch;
+    margin-inline: 15ch;
+}
+
+.section-score {
+    display: flex;
+    flex-direction: row;
+    gap: 10ch;
+    margin-block: 2.5ch;
+    justify-content: center;
+}
+
+.section-score hr {
+    height: 10vh;
+    margin-top: 1ch;
+    border: none;
+    padding-inline: 0.2ch;
+    border-radius: 25px;
+    background-color: rgb(95, 95, 95);
+}
+
+.section-score-left, .section-score-middle, .section-score-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-score-left p, .section-score-middle p, .section-score-right p {
+    font-size: 14px;
+    color: rgb(95, 95, 95);
+}
+
+.section-score-left h2 {
+    font-size: 45px;
+    color: rgba(97, 247, 59, 1);
+}
+
+.section-score-middle h2 {
+    font-size: 45px;
+    color: white;
+}
+
+.section-score-right h2 {
+    font-size: 45px;
+    color: gold;
 }

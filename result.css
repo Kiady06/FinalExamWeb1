@@ -148,11 +148,11 @@ main {
     display: flex;
     flex-direction: row;
     gap: 2.5ch;
-    border: 1px solid red;
-    width: 93.6%;
+    /* border: 1px solid red; */
+    width: 95%;
     margin-inline: 5ch;
-    margin-block: 3.5ch;
-    padding: 2ch;
+    margin-block: 3ch;
+    padding: 1.5ch;
 }
 
 .section-result-left {
@@ -161,6 +161,9 @@ main {
     gap: 6.5ch;
     justify-content: space-between;
     width: 30%;
+    padding: 3ch 5ch;
+    background-color: rgba(0, 0, 0, 0.24);
+    border-radius: 15px;
 }
 
 .section-result-left-top {
@@ -176,15 +179,18 @@ main {
 }
 
 #text-special1 {
+    font-weight: 500;
+    font-size: 16px;
     color: rgba(97, 247, 59, 1);
 }
 
 #text-special2 {
+    font-size: 12.5px;
     color: yellow;
 }
 
 .section-result-left-top h1 {
-    font-size: 45px;
+    font-size: 40px;
     color: white;
 }
 
@@ -198,10 +204,13 @@ main {
 .section-result-left-middle1, .section-result-left-middle2 {
     display: flex;
     flex-direction: column;
-    gap: 1ch;
-    padding: 1.5ch 5.7ch;
+    gap: 0.5ch;
+    padding: 1ch 5ch;
+    padding-top: 1.5ch;
     border-radius: 15px;
     align-items: center;
+    font-size: 13.5px;
+    font-weight: 500;
     color: white;
     background-color: rgba(70, 70, 70, 0.2);
     box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.3);
@@ -220,6 +229,7 @@ main {
 #section-result-left-bottom {
     border: none;
     border-radius: 7.5px;
+    font-size: 14px;
     color: white;
     cursor: pointer;
     background-color: rgba(97, 247, 59, 0.7);
@@ -236,7 +246,38 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: 1px solid yellow;
+    padding: 2.5ch 3ch;
+    /* border: 1px solid yellow; */
     width: 70%;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.24);
 }
 
+.section-result-right-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#section-result-right-header-left {
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+}
+
+.section-result-right-header-right {
+    display: flex;
+    flex-direction: row;
+    gap: 1ch;
+    align-items: center;
+    color: rgba(100, 100, 100, 0.884);
+}
+
+.section-result-right-header-right .green-active {
+    margin-top: 2px;
+    width: 0.85vw;
+    height: 1.5vh;
+    border-radius: 50%;
+    background-color: rgba(97, 247, 59, 1);
+}
