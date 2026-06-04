@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dash</title>
-    <link rel="icon" type="image/svg+xml" href="assets/favIcon.svg">
+    <link rel="icon" type="image" href="assets/favIcon.svg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="stylesheet" href="result.css">
 </head>
@@ -19,11 +19,11 @@
         <nav id="navigation-header">
             <div class="link-navigation-header">
                 <i class="fa-regular fa-keyboard"></i>
-                <a href="header.html">Test</a>
+                <a href="index.html">Test</a>
             </div>
 
             <div class="link-navigation-header" id="link-special">
-                <i class="fa-regular fa-keyboard"></i>
+                <i class="fa-solid fa-chart-area"></i>
                 <a href="result.html">Résultats</a>
             </div>
 
@@ -54,7 +54,7 @@
             <div class="section-result-left-top">
                 <p id="text-special1">WPM MOYEN</p>
                 <h1>00</h1>
-                <p id="text-special2">+4% vs meilleur record</p>
+                <p id="text-special2">Test dernièrement fait</p>
             </div>
 
             <div class="section-result-left-middle">
@@ -69,7 +69,7 @@
                 </div>
             </div>
 
-            <button id="section-result-left-bottom"><i class="fa-regular fa-keyboard"></i> Recommencer ( Tab )</button>
+            <button id="section-result-left-bottom"><i class="fa-solid fa-arrow-rotate-right"></i> Recommencer ( Tab )</button>
         </section>
 
         <section class="section-result-right">
@@ -82,10 +82,12 @@
                 </div>
             </div>
 
-            <div>
-                <!-- Ici, la partie courbe dont je ne sais pas encore comment on fait -->
+            <div class="chart-container">
+                <canvas id="progressionChart"></canvas>
             </div>
         </section>
     </main>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="result.js"></script>
 </html>

@@ -168,12 +168,21 @@ main {
 .section-left {
     display: flex;
     flex-direction: column;
-    gap: 2ch;
+    gap: 4.5ch;
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: 15px;
     width: 50%;
     padding-inline: 3ch;
     padding-block: 2ch;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInUp1 0.8s ease-out forwards;
+}
+
+.section-left1, .section-left2 {
+    display: flex;
+    flex-direction: column;
+    gap: 2ch;
 }
 
 .section-left-title {
@@ -202,8 +211,14 @@ main {
     padding-inline: 1.5ch;
     padding-block: 2ch;
     border-radius: 10px;
+    cursor: pointer;
     background-color: rgba(98, 143, 85, 0.1);
-    box-shadow: 0px 1px 3px rgba(97, 247, 59, 0.3);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.section-left-theme1:hover {
+    transform: translateY(-5px);
+    box-shadow: 1px 3px 5px rgba(97, 247, 59, 0.5);
 }
 
 .section-left-theme1 .active-theme-statut {
@@ -242,8 +257,14 @@ main {
     padding-inline: 1.5ch;
     padding-block: 2ch;
     border-radius: 10px;
+    cursor: pointer;
     background-color: rgba(58, 58, 58, 0.2);
-    box-shadow: 0px 1px 2px rgba(53, 53, 53, 0.2);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.section-left-theme2:hover {
+    transform: translateY(-5px);
+    box-shadow: 1px 3px 5px rgba(54, 54, 54, 0.5);
 }
 
 .section-left-theme2 .not-active-theme, .not-active-theme .color-theme {
@@ -270,6 +291,53 @@ main {
     background-color: #9D4EDD;
 }
 
+.section-left2 .section-login-setting {
+    display: flex;
+    flex-direction: row;
+    gap: 2ch;
+    width: 100%;
+}
+
+.section-login-setting button {
+    border: 1px solid rgba(58, 58, 58, 0.05);
+    width: 50%;
+    font-size: 14.5px;
+    letter-spacing: 0.6px;
+    border-radius: 7.5px;
+    padding-block: 1.5ch;
+    color: white;
+    background-color: rgba(58, 58, 58, 0.2);
+    cursor: pointer;
+    transition: 0.3s ease-in-out, box-shadow 0.5s ease;
+}
+
+.section-login-setting button:hover {
+    border: 1px solid rgba(97, 247, 59, 1);
+    background-color: rgba(98, 143, 85, 0.1);
+    box-shadow: 1px 3px 5px rgba(97, 247, 59, 0.5);
+}
+
+.section-left3 a {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5ch;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 28px;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+}
+
+.section-left3 a:hover {
+    color: rgba(97, 247, 59, 1);
+}
+
+.section-left3 a i {
+    font-size: 22px;
+    color: rgba(97, 247, 59, 1);
+}
+
 .section-right {
     display: flex;
     flex-direction: column;
@@ -279,6 +347,9 @@ main {
     width: 50%;
     padding-inline: 3ch;
     padding-block: 2ch;
+    opacity: 0;
+    transform: translateY(-35px);
+    animation: fadeInUp2 1s ease-out forwards;
 }
 
 .section-right-header {
@@ -413,6 +484,7 @@ main {
     border-radius: 7.5px;
     padding-block: 1.5ch;
     color: white;
+    letter-spacing: 0.6px;
     background-color: rgba(88, 88, 88, 0.2);
     cursor: pointer;
     transition: 0.3s ease-in-out;
@@ -421,4 +493,28 @@ main {
 #section-right-bottom:hover {
     background-color: rgba(48, 48, 48, 0.2);
     box-shadow: 1px 2px 3px rgba(10, 10, 10, 0.5);
+}
+
+@keyframes fadeInUp1 {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp2 {
+    0% {
+        opacity: 0;
+        transform: translateY(-35px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

@@ -164,6 +164,9 @@ main {
     padding: 3ch 5ch;
     background-color: rgba(0, 0, 0, 0.24);
     border-radius: 15px;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInUp1 0.8s ease-out forwards;
 }
 
 .section-result-left-top {
@@ -185,7 +188,9 @@ main {
 }
 
 #text-special2 {
-    font-size: 12.5px;
+    font-weight: 450;
+    font-size: 13.5px;
+    letter-spacing: 0.6px;
     color: yellow;
 }
 
@@ -204,13 +209,14 @@ main {
 .section-result-left-middle1, .section-result-left-middle2 {
     display: flex;
     flex-direction: column;
-    gap: 0.5ch;
-    padding: 1ch 5ch;
+    gap: 1.5ch;
+    padding: 1ch 4ch;
     padding-top: 1.5ch;
     border-radius: 15px;
     align-items: center;
     font-size: 13.5px;
     font-weight: 500;
+    letter-spacing: 1px;
     color: white;
     background-color: rgba(70, 70, 70, 0.2);
     box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.3);
@@ -247,10 +253,12 @@ main {
     flex-direction: column;
     justify-content: space-between;
     padding: 2.5ch 3ch;
-    /* border: 1px solid yellow; */
     width: 70%;
     border-radius: 15px;
     background-color: rgba(0, 0, 0, 0.24);
+    opacity: 0;
+    transform: translateY(-35px);
+    animation: fadeInUp2 1s ease-out forwards;
 }
 
 .section-result-right-header {
@@ -280,4 +288,37 @@ main {
     height: 1.5vh;
     border-radius: 50%;
     background-color: rgba(97, 247, 59, 1);
+}
+
+.chart-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    flex-grow: 1;    
+    min-height: 280px;   
+    margin-top: 2ch;     
+}
+
+@keyframes fadeInUp1 {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp2 {
+    0% {
+        opacity: 0;
+        transform: translateY(-35px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

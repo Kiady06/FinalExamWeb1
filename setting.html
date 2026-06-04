@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dash</title>
-    <link rel="icon" type="image/svg+xml" href="assets/favIcon.svg">
+    <link rel="icon" type="image" href="assets/favIcon.svg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="stylesheet" href="setting.css">
 </head>
@@ -18,11 +18,11 @@
          <nav id="navigation-header">
             <div class="link-navigation-header">
                 <i class="fa-regular fa-keyboard"></i>
-                <a href="header.html">Test</a>
+                <a href="index.html">Test</a>
             </div>
 
             <div class="link-navigation-header">
-                <i class="fa-regular fa-keyboard"></i>
+                <i class="fa-solid fa-chart-area"></i>
                 <a href="result.html">Résultats</a>
             </div>
 
@@ -50,39 +50,57 @@
 
     <main>
         <section class="section-left">
-            <div class="section-left-title">
-                <i class="fa-regular fa-keyboard"></i>
-                <h2>Thèmes et style d'interface</h2>
-            </div>
-
-            <div class="section-left-theme1">
-                <div class="active-theme">
-                    <div class="color-theme"> <!-- Les couleurs du thèmes -->
-                        <div class="color-theme-ring1"></div>
-                        <div class="color-theme-ring2"></div>
-                    </div>
-
-                    <p>Glitch Core ( Défaut sombre )</p>
+            <div class="section-left1">
+                <div class="section-left-title">
+                    <i class="fa-solid fa-palette"></i>
+                    <h2>Thèmes et style d'interface</h2>
                 </div>
 
-                <p class="active-theme-statut">ACTIF</p>
-            </div>
+                <div class="section-left-theme1">
+                    <div class="active-theme">
+                        <div class="color-theme"> <!-- Les couleurs du thèmes -->
+                            <div class="color-theme-ring1"></div>
+                            <div class="color-theme-ring2"></div>
+                        </div>
 
-            <div class="section-left-theme2">
-                <div class="not-active-theme">
-                    <div class="color-theme"> <!-- Les couleurs du thèmes -->
-                        <div class="color-theme-ring3"></div>
-                        <div class="color-theme-ring4"></div>
+                        <p>Glitch Core ( Défaut sombre )</p>
                     </div>
 
-                    <p>Cyber-Neon ( Air Techno )</p>
+                    <p class="active-theme-statut">ACTIF</p>
                 </div>
+
+                <div class="section-left-theme2">
+                    <div class="not-active-theme">
+                        <div class="color-theme"> <!-- Les couleurs du thèmes -->
+                            <div class="color-theme-ring3"></div>
+                            <div class="color-theme-ring4"></div>
+                        </div>
+
+                        <p>Cyber-Neon ( Air Techno )</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-left2">
+                <div class="section-left-title">
+                    <i class="fa-regular fa-user"></i>
+                    <h2>Informations personnelles</h2>
+                </div>
+
+                <div class="section-login-setting">
+                    <button>Changer le nom d'utilisateur</button>
+                    <button>Changer le mot de passe</button>
+                </div>
+            </div>
+
+            <div class="section-left3">
+                <a href=""><i class="fa-solid fa-arrow-right-from-bracket"></i>Déconnexion</a>
             </div>
         </section>
 
         <section class="section-right">
             <div class="section-right-header">
-                <i class="fa-regular fa-keyboard"></i>
+                <i class="fa-solid fa-volume"></i>
                 <h2>Son & Typographie</h2>
             </div>
 
@@ -90,7 +108,7 @@
                 <div class="section-right-top1">
                     <div class="section-text">
                         <p>Sons mécaniques de touche (SFX)</p>
-                        <p id="text-special" >Simule le son de switchs bleus à la frappe</p>
+                        <p id="text-special" >Simule le son de switchs à la frappe</p>
                     </div>
 
                     <label class="section-switch">

@@ -163,6 +163,9 @@ main {
     padding-block: 3ch;
     border-radius: 15px;
     background-color: rgba(0, 0, 0, 0.24);
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInUp1 0.8s ease-out forwards;
 }
 
 .section-profil-left-top {
@@ -263,6 +266,9 @@ main {
     background-color: rgba(0, 0, 0, 0.24);
     border-radius: 15px;
     padding: 3ch;
+    opacity: 0;
+    transform: translateY(-35px);
+    animation: fadeInUp2 1s ease-out forwards;
 }
 
 .section-profil-right-header {
@@ -309,4 +315,28 @@ main {
 
 .section-skill p {
     color: rgb(44, 44, 44);
+}
+
+@keyframes fadeInUp1 {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp2 {
+    0% {
+        opacity: 0;
+        transform: translateY(-35px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

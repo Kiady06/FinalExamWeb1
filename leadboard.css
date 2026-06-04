@@ -162,6 +162,9 @@ main {
     border-radius: 15px;
     background-color: rgba(0, 0, 0, 0.24);
     width: 43%;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInUp1 0.8s ease-out forwards;
 }
 
 .section-leadboard-left #text-bottom {
@@ -245,6 +248,9 @@ main {
     width: 57%;
     border-radius: 15px;
     background-color: rgba(0, 0, 0, 0.24);
+    opacity: 0;
+    transform: translateY(-35px);
+    animation: fadeInUp2 1s ease-out forwards;
 }
 
 .section-board-header {
@@ -262,4 +268,28 @@ main {
     display: flex;
     flex-direction: row;
     gap: 7.5ch;
+}
+
+@keyframes fadeInUp1 {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp2 {
+    0% {
+        opacity: 0;
+        transform: translateY(-35px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
